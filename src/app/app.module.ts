@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ImageComponent } from './components/image/image.component';
+import { SendComponent } from './components/send/send.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImageComponent
+    ImageComponent,
+    SendComponent
   ],
   imports: [
     HttpClientModule,
