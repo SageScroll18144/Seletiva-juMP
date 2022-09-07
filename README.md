@@ -4,13 +4,13 @@ Este repositório contém um projeto referente àao Desafio JuMP - Mineração d
 
 ## Components
 
-### data-extract:
+### [data-extract](https://github.com/SageScroll18144/Seletiva-juMP/tree/main/src/app/components/data-extract):
 
 * Componentes para as requisições.
 
 ## Services
 
-### users:
+### [users](https://github.com/SageScroll18144/Seletiva-juMP/tree/main/src/app/services):
 
 * Realiza o consumo das rotas da API do servidor backend.
 
@@ -26,7 +26,7 @@ postData(data: any): Observable<any>
 
 - Method: POST
 
-##Frontend
+## Frontend
 
 Uma SPA
 ![Screenshot](/imgs/front.png)
