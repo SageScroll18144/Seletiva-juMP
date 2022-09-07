@@ -1,27 +1,32 @@
-# SeletivaBolsaJu
+# Seletiva juMP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
+Este repositório contém um projeto referente àao Desafio JuMP - Mineração de processos - Frontend. Gostaria de agradecer a opotunidade, apesar do projeto não ter ficado do jeito que eu almejava foi extremamente interessante desenvolver por ser algo totalmente novo para mim, nunca tive experiência com aplicação web antes e agora desejo continuar estudando angular.
 
-## Development server
+## Components
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### data-extract:
 
-## Code scaffolding
+* Componentes para as requisições.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Services
 
-## Build
+### users:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Realiza o consumo das rotas da API do servidor backend.
 
-## Running unit tests
+```ts
+getAllData(): Observable<any>
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Method: GET
 
-## Running end-to-end tests
+```ts
+postData(data: any): Observable<any>
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Method: POST
 
-## Further help
+##Frontend
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Uma SPA
+![Screenshot](/imgs/front.png)

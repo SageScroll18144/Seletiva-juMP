@@ -3,24 +3,38 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-import { ImageComponent } from './components/image/image.component';
-import { SendComponent } from './components/send/send.component';
+
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { HomeComponent } from './home/home.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { DataExtractComponent } from './components/data-extract/data-extract.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ImageComponent,
-    SendComponent
+    HomeComponent,
+    DataExtractComponent
   ],
   imports: [
+    BrowserModule,
+    AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserModule,
-    AppRoutingModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [FormBuilder, HttpClient],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

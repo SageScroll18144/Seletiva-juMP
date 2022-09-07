@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'seletiva-bolsa_ju'`, () => {
+  it(`should have as title 'webApp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('seletiva-bolsa_ju');
+    expect(app.title).toEqual('webApp');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('seletiva-bolsa_ju app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('webApp app is running!');
   });
 });
